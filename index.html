@@ -1,4 +1,59 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><title>Lokma — Legal</title>
-<style>body{font:16px/1.6 -apple-system,sans-serif;max-width:640px;margin:0 auto;padding:48px 22px;color:#1c1c1e}a{color:#c8531f;display:block;margin:12px 0;font-weight:600}</style></head>
-<body><h1>Lokma — Legal</h1><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0D0D0D">
+<title>Lokma — Legal</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .links{display:grid;gap:14px;margin-top:8px}
+  .link{display:flex;align-items:center;gap:15px;background:var(--card);border:1px solid var(--line);
+    border-radius:18px;padding:18px 20px;box-shadow:0 1px 2px rgba(0,0,0,.035),0 10px 30px rgba(0,0,0,.02);transition:.18s}
+  .link:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.08);text-decoration:none}
+  .link .ic{flex:none;width:46px;height:46px;border-radius:13px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:22px}
+  .link b{display:block;color:var(--ink);font-size:17px}
+  .link span{color:var(--muted);font-size:13.5px}
+  .link .arw{margin-left:auto;color:var(--muted);font-weight:800}
+</style>
+</head>
+<body data-lang="en">
+
+<header class="hero">
+  <div class="glow"></div>
+  <img class="logo" src="logo.png" alt="Lokma">
+  <div class="brand">Lokma</div>
+  <h1>Legal</h1>
+  <span class="updated" data-l="en">Privacy &amp; Terms</span>
+  <span class="updated" data-l="tr">Gizlilik &amp; Koşullar</span>
+</header>
+
+<main class="wrap">
+  <p class="intro" data-l="en">Calorie tracking made easy — snap your plate, let Lokma do the rest. Here's the legal stuff, in plain language.</p>
+  <p class="intro" data-l="tr">Kalori takibi artık kolay — tabağının fotoğrafını çek, gerisini Lokma halletsin. İşte yasal kısım, sade bir dille.</p>
+
+  <div class="links">
+    <a class="link" href="privacy.html">
+      <span class="ic">🔒</span>
+      <span><b>Privacy Policy</b><span data-l="en">What we collect and your choices</span><span data-l="tr">Ne topluyoruz ve seçeneklerin</span></span>
+      <span class="arw">→</span>
+    </a>
+    <a class="link" href="terms.html">
+      <span class="ic">📄</span>
+      <span><b>Terms of Service</b><span data-l="en">Using Lokma, subscriptions, your account</span><span data-l="tr">Kullanım, abonelik, hesabın</span></span>
+      <span class="arw">→</span>
+    </a>
+  </div>
+</main>
+
+<footer class="foot">
+  <a href="mailto:ortakmax660@gmail.com">ortakmax660@gmail.com</a>
+  <p>© 2026 Lokma</p>
+</footer>
+
+<script>
+if((navigator.language||'').slice(0,2)==='tr'){document.body.dataset.lang='tr';document.documentElement.lang='tr';}
+</script>
+</body>
+</html>
